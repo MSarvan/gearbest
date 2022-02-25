@@ -256,16 +256,35 @@
     margin-top: 150px;
     height: 25px;
 }
-#pro_qty
+#box2 div #pro-qty
 {
-    /* border: 1px solid yellow; */
+    border: 1px solid black;
     margin-left: 15px;
     margin-top: 150px;
-    width: 50px;
+    width: 70px;
     align-items: center;
-    height: 25px;
+    height: 35px;
     justify-content: center;
-    background-color: rgb(240, 238, 240);
+    background-color: rgb(211, 183, 211);
+    box-sizing: border-box;
+}
+#box2 div #pro-qty p
+{
+    padding-right: 5px;
+    font-size: 20px;
+}
+#box2 div #pro-qty p:nth-child(1),
+#box2 div #pro-qty p:nth-child(3)
+{
+    /* border: 1px solid blue; */
+    cursor: pointer;
+}
+#cur_pri
+{
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    box-sizing: border-box;
+    padding-top: 150px;
 }
 .pro_qty span
 {

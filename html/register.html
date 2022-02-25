@@ -34,36 +34,71 @@
 </html>
 
 <script>
-    function signUp(){
-        let email = document.getElementById('email').value;
-        let password = document.getElementById('password').value;
-        let cpassword = document.getElementById('c_password').value;
-        if(localStorage.getItem('users') === null) {
-            localStorage.setItem("users", JSON.stringify([]));
-        }
-        let user = {
+    // function signUp(){
+    //     let email = document.getElementById('email').value;
+    //     let password = document.getElementById('password').value;
+    //     let cpassword = document.getElementById('c_password').value;
+    //     if(localStorage.getItem('users') === null) {
+    //         localStorage.setItem("users", JSON.stringify([]));
+    //     }
+    //     let user = {
+    //         email,
+    //         password,
+    //         cpassword
+    //     };
+    //     if((password === cpassword) && (password.length >= 6) && (email.length != 0))
+    //     {
+    //         let arr = JSON.parse(localStorage.getItem("users"));
+    //         arr.push(user);
+
+    //         localStorage.setItem("users", JSON.stringify(arr));
+
+    //         alert("Account created successfully!")
+
+    //         window.location.href="signin.html";
+    //     }
+    //     else if((password.length < 6) || (password.length > 20))
+    //     {
+    //         alert("Password length should be between 6 to 20 characters")
+    //     }
+    //     else
+    //     {
+    //         alert("Password mismatch");
+    //     }
+    // }
+        function signUp()
+        {
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let c_password = document.getElementById("c_password").value;
+
+            if(password != c_password)
+            {
+                alert("Password mismatch");
+            }
+            else
+            {
+                let obj = {
             email,
             password,
-            cpassword
-        };
-        if((password === cpassword) && (password.length >= 6) && (email.length != 0))
-        {
-            let arr = JSON.parse(localStorage.getItem("users"));
-            arr.push(user);
+            };
+            console.log("obj:", obj);
+            try {
+                fetch(`http://localhost:4800/register`, {
+                method: "POST",
+                headers: { "Content-type": "application/json" },
+                body: JSON.stringify(obj),
+            })
+            .then((res) => res.json())
+            .then((data) => {
+            console.log("data:", data);
 
-            localStorage.setItem("users", JSON.stringify(arr));
-
-            alert("Account created successfully!")
-
-            window.location.href="signin.html";
+            alert("Account created Successfully");
+            });
+            } catch (e) {
+                console.log(e.message);
+            }
+            }
         }
-        else if((password.length < 6) || (password.length > 20))
-        {
-            alert("Password length should be between 6 to 20 characters")
-        }
-        else
-        {
-            alert("Password mismatch");
-        }
-    }
+    
 </script>

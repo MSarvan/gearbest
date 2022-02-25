@@ -1,0 +1,176 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.brand_logo img
+{
+    width: 280px;
+    height: 65px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.sd
+{
+    /* width: 1250px; */
+    height: 350px;
+    /* border: 1px solid green; */
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 125px;
+    display: flex;
+}
+.sd div p
+{
+    margin-top: 5px;
+}
+.txt
+{
+    font-size: 25px;
+    font-weight: 700;
+}
+.div_1
+{
+    display: flex;
+}
+.shop
+{
+    margin-top: 50px;
+    /* border: 1px solid black; */
+    margin-left: 595px;
+    height: 35px;
+    width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 7px;
+    color: white;
+    background-color: black;
+}
+.ship
+{
+    margin-top: 50px;
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    height: 35px;
+    width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 7px;
+    color: white;
+    background-color: black;
+}
+.pay
+{
+    margin-top: 50px;
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    height: 35px;
+    width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 7px;
+    background-color: rgb(247, 247, 247);
+}
+.os
+{
+    /* border: 1px solid thistle; */
+    margin-left: 300px;
+}
+.summary
+{
+    /* border: 1px solid black; */
+    width: 1150px;
+    height: 340px;
+    margin-left: 75px;
+    background-color: rgb(247, 247, 247);
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    display: flex;
+}
+.days
+{
+    margin-top: 100px;
+}
+.coun
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.copy
+{
+    display: flex;
+}
+.copy img
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+.side_div
+{
+    margin-left: 200px;
+}
+.subtotal
+{
+    margin-top: 20px;
+}
+#subtot_amt
+{
+    margin-left: 115px;
+
+}
+.discount
+{
+    margin-top: 15px;
+}
+.dis_amt
+{
+    margin-left: 140px;
+}
+.total
+{
+    margin-top: 15px;
+}
+#tot_amt
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 120px;
+}
+.promo
+{
+    margin-top: 25px;
+}
+.input
+{
+    width: 170px;
+    height: 25px;
+    font-size: 17px;
+}
+.apply
+{
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    width: 75px;
+    height: 28px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.checkout_btn
+{
+    width: 260px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 0px;
+    background-color: #ffda00;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}

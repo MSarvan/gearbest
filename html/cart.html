@@ -45,7 +45,7 @@
                     <p class="discount"><span class="dis">Discount</span> <span class="dis_amt">Rs. 00</span></p>
                     <p class="total"><span class="tot">Total</span> <span id="tot_amt">Rs. </span></p>
                     <p class="promo"><span><input type="text" placeholder="Enter promo code" class="input"></span><span><button class="apply">Apply</button></span></p>
-                    <p><a href="./address.html"><button class="checkout_btn">Check Out</button></p></a>
+                    <p><a href="./address.html"><button class="checkout_btn">Buy now</button></p></a>
                 </div>
             </div>
             <a href="../index.html"><button class="shop_btn">Continue Shopping</button></a>
@@ -66,7 +66,7 @@
 
     function cartDetails() 
     {
-    let user_id = "62176d4641e5973cf4667a6b";
+    let user_id = "6218eee38a5ddf577e49674c";
     try {
       fetch(`http://localhost:4800/User/${user_id}`)
         .then((res) => res.json())
@@ -100,7 +100,7 @@
       name.innerText = product.name;
 
       let qty_div = document.createElement("div");
-      qty_div.setAttribute("id", "pro_qty");
+      qty_div.setAttribute("id", "pro-qty");
       var count = 1;
 
       // Minus Quantity -----------
@@ -149,6 +149,7 @@
 
       let curr_price = document.createElement("p"); 
       curr_price.innerText = product.price;
+      curr_price.setAttribute("id", "cur_pri");
 
       qty_div.append(minus, show_qty, plus);
 
