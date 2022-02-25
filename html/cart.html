@@ -60,13 +60,14 @@
     import footer from "../components/footer.js"
     let footer_div = document.getElementById("footer");
     footer_div.innerHTML = footer();
-</script>
 
-<script>
+    import loadData from "../script/local_storage.js"
+    //console.log('loadData:', loadData);
 
     function cartDetails() 
     {
-    let user_id = "6218eee38a5ddf577e49674c";
+    let user_id = loadData("userdetails")._id;
+    console.log('user_id:', user_id)
     try {
       fetch(`http://localhost:4800/User/${user_id}`)
         .then((res) => res.json())
@@ -81,6 +82,9 @@
   }
   cartDetails();
 
+// </script>
+
+// <script>
 
   function displayData(details) {
     var cart_items = document.getElementById("box2");

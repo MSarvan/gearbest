@@ -33,6 +33,12 @@ const login = async (req, res) => {
         .send({ message: "Email is not registered", status: "failed" });
     }
     // const create_user = await Users.create(req.body);
+    if(req.body.password != user.password)
+    {
+      return res
+        .status(400)
+        .send({ message: "Wrong credentials", status: "failed" }); 
+    }
 
     return res.status(200).send(user);
   } catch (e) {

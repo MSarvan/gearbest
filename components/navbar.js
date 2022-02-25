@@ -23,7 +23,7 @@ function navbar()
             </div>
             <div class="signin">
                 <a href="./html/signin.html"><button><div class="logo"><span class="material-icons-outlined">perm_identity</span></div>
-                <p id="user_id"> Sign In</p></button></a>
+                <p id="user2_id"> Sign In</p></button></a>
             </div>
             <div class="fav">
                 <button><div class="logo"><span class="material-icons-outlined">favorite</span></div>
@@ -44,23 +44,3 @@ function navbar()
 }
 
 export default navbar
-
-
-//     let user_id = document.getElementById("user_id").innerText;
-//     console.log('user_id:', user_id);
-
-//     function loadData(key) {
-//     try {
-//       let data = window.localStorage.getItem(key);
-//       data = JSON.parse(data);
-//       return data;
-//     } catch (e) {
-//       console.log("e:", e);
-//       return undefined;
-//     }
-//   }
-
-//     let userdetails = loadData("userdetails");
-//     console.log('userdetails:', userdetails)
-
-//     user_id.innerText = userdetails.email;

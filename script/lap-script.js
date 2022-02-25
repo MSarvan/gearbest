@@ -39,8 +39,18 @@ function laptopdata() {
       btn.setAttribute("id", "cart_btn");
 
       btn.onclick = () => {
-        var user_id = "6218eee38a5ddf577e49674c";
-        console.log('product:', product)
+        function loadData(key) {
+          try {
+          let data = window.localStorage.getItem(key);
+          data = JSON.parse(data);
+          return data;
+          } catch (e) {
+          console.log("e:", e);
+          return undefined;
+          }
+        }
+        
+        var user_id = loadData("userdetails")._id;
   
         try {
           fetch(`http://localhost:4800/User/${user_id}`, {

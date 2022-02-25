@@ -34,38 +34,7 @@
 </html>
 
 <script>
-    // function signUp(){
-    //     let email = document.getElementById('email').value;
-    //     let password = document.getElementById('password').value;
-    //     let cpassword = document.getElementById('c_password').value;
-    //     if(localStorage.getItem('users') === null) {
-    //         localStorage.setItem("users", JSON.stringify([]));
-    //     }
-    //     let user = {
-    //         email,
-    //         password,
-    //         cpassword
-    //     };
-    //     if((password === cpassword) && (password.length >= 6) && (email.length != 0))
-    //     {
-    //         let arr = JSON.parse(localStorage.getItem("users"));
-    //         arr.push(user);
-
-    //         localStorage.setItem("users", JSON.stringify(arr));
-
-    //         alert("Account created successfully!")
-
-    //         window.location.href="signin.html";
-    //     }
-    //     else if((password.length < 6) || (password.length > 20))
-    //     {
-    //         alert("Password length should be between 6 to 20 characters")
-    //     }
-    //     else
-    //     {
-    //         alert("Password mismatch");
-    //     }
-    // }
+    
         function signUp()
         {
             let email = document.getElementById("email").value;
@@ -92,8 +61,15 @@
             .then((res) => res.json())
             .then((data) => {
             console.log("data:", data);
-
-            alert("Account created Successfully");
+            if(data.message)
+            {
+                alert(data.message)
+            }
+            else
+            {
+                alert("Account created Successfully");
+                window.location.href = "./signin.html";
+            }
             });
             } catch (e) {
                 console.log(e.message);

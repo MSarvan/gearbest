@@ -39,6 +39,25 @@
     import footer from "./components/footer.js"
     let footer_div = document.getElementById("footer");
     footer_div.innerHTML = footer();
+
+    let user_id = document.getElementById("user2_id");
+    console.log('user_id:', user_id);
+
+    function loadData(key) {
+        try {
+        let data = window.localStorage.getItem(key);
+        data = JSON.parse(data);
+        return data;
+        } catch (e) {
+        console.log("e:", e);
+        return undefined;
+        }
+    }
+
+    let userdetails = loadData("userdetails");
+    console.log('userdetails:', userdetails);
+
+    user_id.innerText = userdetails.email;
 </script>
 
 
@@ -48,4 +67,3 @@
 <script src="./script/headphone-script.js"></script>
 <script src="./script/drone-script.js"></script>
 <script src="./script/printer-script.js"></script>
-
