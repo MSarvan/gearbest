@@ -1,0 +1,69 @@
+*
+{
+    padding: 0;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.brand_logo img
+{
+    width: 280px;
+    height: 65px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.cont
+{
+    width: 500px;
+    height: 480px;
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.head
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 25px;
+    text-align: center;
+}
+.gap
+{
+    height: 30px;
+}
+.content
+{
+    margin: auto;
+    width: 80%;
+    padding-top: 15px;
+}
+#email1
+{
+    width: 395px;
+    height: 35px;
+}
+#password1
+{
+    width: 395px;
+    height: 35px;
+}
+.chkbox
+{
+    font-size: 14px;
+}
+button
+{
+    width: 400px;
+    height: 38px;
+    font-size: 21px;
+    font-weight: 600;
+    background-color: #ffda00;
+    cursor: pointer;
+}
+.create
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
