@@ -12,3 +12,12 @@ As a member from the FT-Web12, I am on the verge of completion of the fourth uni
 <li>Mongoose</li>
 
 # Snapshots
+<li>Landing page</li>
+
+<li>Signin / Signup page</li>
+
+<li>Cart page</li>
+
+<li>Checkout page</li>
+
+<li>Payment page</li>
