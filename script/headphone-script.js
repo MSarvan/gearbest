@@ -1,6 +1,6 @@
 function headphonedata() {
     try {
-      fetch("http://localhost:4800/Headphone")
+      fetch("https://gaerbest-backend.herokuapp.com/Headphone")
         .then((res) => res.json())
         .then((data) => {
           hpData(data);
@@ -53,7 +53,7 @@ function headphonedata() {
         var user_id = loadData("userdetails")._id;
   
         try {
-          fetch(`http://localhost:4800/User/${user_id}`, {
+          fetch(`https://gaerbest-backend.herokuapp.com/User/${user_id}`, {
             method: "PATCH",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(product),

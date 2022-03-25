@@ -1,6 +1,6 @@
 function dronedata() {
     try {
-      fetch("http://localhost:4800/Drone")
+      fetch("https://gaerbest-backend.herokuapp.com/Drone")
         .then((res) => res.json())
         .then((data) => {
           dronesData(data);
@@ -55,7 +55,7 @@ function dronedata() {
         // console.log('product:', product)
   
         try {
-          fetch(`http://localhost:4800/User/${user_id}`, {
+          fetch(`https://gaerbest-backend.herokuapp.com/User/${user_id}`, {
             method: "PATCH",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(product),

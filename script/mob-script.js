@@ -1,6 +1,6 @@
 function mobilesdata() {
     try {
-      fetch("http://localhost:4800/Mobiles")
+      fetch("https://gaerbest-backend.herokuapp.com/Mobiles")
         .then((res) => res.json())
         .then((data) => {
           mobData(data);
@@ -57,7 +57,7 @@ function mobilesdata() {
         var user_id = loadData("userdetails")._id;
   
         try {
-          fetch(`http://localhost:4800/User/${user_id}`, {
+          fetch(`https://gaerbest-backend.herokuapp.com/User/${user_id}`, {
             method: "PATCH",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(product),
