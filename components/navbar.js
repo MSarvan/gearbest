@@ -22,7 +22,7 @@ function navbar()
                 <div class="search1"><span class="material-icons-outlined">search</span></div>
             </div>
             <div class="signin">
-                <a href="./html/signin.html"><button><div class="logo"><span class="material-icons-outlined">perm_identity</span></div>
+                <a href="./signin.html"><button><div class="logo"><span class="material-icons-outlined">perm_identity</span></div>
                 <p id="user2_id"> Sign In</p></button></a>
             </div>
             <div class="fav">
@@ -30,7 +30,7 @@ function navbar()
                 <p> Favourites</p></button>
             </div>
             <div class="cart">
-                <a href="./html/cart.html"><button   onclick="toCartPage()"><div class="logo"><span class="material-icons-outlined">shopping_cart</span></div>
+                <a href="./cart.html"><button   onclick="toCartPage()"><div class="logo"><span class="material-icons-outlined">shopping_cart</span></div>
                 <p> Cart</p></button></a>
             </div>
         </div>
